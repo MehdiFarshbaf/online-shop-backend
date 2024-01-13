@@ -12,7 +12,12 @@
   "author": "Mehdi Farshbaf",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.7.0",
+    "sequelize": "^6.35.2",
     "yup": "^1.3.3"
   }
 }
