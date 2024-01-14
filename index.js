@@ -10,6 +10,7 @@ import {errorHandler} from "./middlewares/errors.js";
 // import routes
 import brandRoutes from "./routes/brandRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
+import faqRoutes from "./routes/faqRoutes.js";
 
 
 // Load Config
@@ -37,6 +38,7 @@ try {
 // routes
 app.use("/api/brand", brandRoutes)
 app.use("/api/category", categoryRoutes)
+app.use("/api/faq", faqRoutes)
 
 // error handler
 app.use(errorHandler)

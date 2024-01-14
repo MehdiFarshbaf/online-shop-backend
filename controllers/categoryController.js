@@ -1,4 +1,5 @@
 import Category from "../models/categoryModel.js";
+import {sendSuccessResponse} from "../helper/functions.js";
 
 const createCategories = (categories, parentId = 0) => {
     const categoryList = [];
@@ -82,7 +83,7 @@ export const deleteCategory = async (req, res, next) => {
         await Category.destroy({
             where: {id}
         })
-
+        // sendSuccessResponse(res, true, 200, "دسته بندی مورد نظر حذف شد.")
         res.status(200).json({
                 success: true,
                 message: "دسته بندی مورد نظر حذف شد."
